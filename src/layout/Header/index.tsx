@@ -147,18 +147,18 @@ const Header:React.FC = () => {
                                         <span className = 'navigation__title'>{I18n.t('contacts')}</span>
                                     </NavLink>
                                 </li>
-                                <li className = 'navigation__item navigation__item--log'>
+{/*                                <li className = 'navigation__item navigation__item--log'>
                                     <a
                                         className = 'navigation__link' href = { `${URL}/admin/login` }
                                         target = '_blank'
                                         onClick = { () => onCLickMenu(null) }>
                                         <span className = 'navigation__title'>{I18n.t('toAdmin')}</span>
                                     </a>
-                                </li>
+                                </li>*/}
                             </ul>
 
                         </nav>
-                        <div className = 'navigation__btn'>
+{/*                        <div className = 'navigation__btn'>
                             <Btn
                                 full
                                 nofollow
@@ -167,7 +167,7 @@ const Header:React.FC = () => {
                                 url = { `${URL}/admin/login` }
                                 onPress = { () => onCLickMenu(true) }
                             />
-                        </div>
+                        </div>*/}
 
                     </div>
                     <div className = 'lg'>

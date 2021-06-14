@@ -16,10 +16,11 @@ const About:React.FC = () => {
 
     return (
         <section className = 'about'>
+            <div className='content-wrap'>
             <h2 className = 'title about-title'>{I18n.t('about')}</h2>
             <div className = 'anchor' id = 'about' />
             <div className = 'about-wrap'>
-                <div className = 'content-wrap about__content pad'>
+                <div className = 'about__content pad'>
                     <div className = { `about_description ${isOpen ? "about_description--full" : ""}` }>
                         <p>
                             {I18n.t('homeAboutText1')}
@@ -47,6 +48,7 @@ const About:React.FC = () => {
                         />
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     );

@@ -95,7 +95,33 @@ export interface yourHelpI {
     bg: string,
     img: string,
     url?: string,
-    onPress?: string,
+    onPress?: ()=>{},
+    bgPosition?: string,
+    contacts?: HelpCenterContactsI[],
+    link?: string,
+}
+
+export interface HelpCenterI {
+    ind: number,
+    title: string,
+    description: string,
+    contacts?: HelpCenterContactsI[],
+    bg: string,
+    img: string,
+    url?: string,
+    onPress?: ()=>{},
+    bgPosition?: string,
+    link?: string,
+}
+
+export interface HelpCenterContactsI {
+    data?:HelpCenterContactsDataI[],
+    description:string
+}
+
+export interface HelpCenterContactsDataI {
+     type: string,
+    value:string
 }
 
 export interface getHelpI {
