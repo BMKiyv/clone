@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import './style.scss';
 
 import Btn from "@/components/Btn";
@@ -6,6 +7,9 @@ import yourHelp from '../../../jsons/yourHelp.json';
 import { yourHelpI } from '@/interfaces';
 
 const YourHelp:React.FC = () => {
+
+    const [ full, setFull ] = useState(false);
+
     const renderList = (data:yourHelpI) => {
         const styled = {
             'backgroundColor':    `${data.bg}`,
@@ -16,6 +20,9 @@ const YourHelp:React.FC = () => {
             'backgroundImage':    `url(${data.src})`,
             'backgroundPosition': 'center',
             'backgroundRepeat':   'no-repeat',
+        };
+        const onPress = () => {
+            setFull((prev) => !prev);
         };
 
         return (
@@ -28,6 +35,8 @@ const YourHelp:React.FC = () => {
                         img = { data.img }
                         theme = 'grey'
                         title = { data.btnTitle }
+                        url = { data.url? data.url: false }
+                        onPress = { data.onPress==="1"? onPress: () => null }
                     />
                 </div>
             </div>
