@@ -1,0 +1,47 @@
+.get-help{
+
+  max-width: 1024px; //calc(380px + var(--m-horizont) * 2)
+  padding: 0 var(--m-horizont);
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  &__title{
+    text-align: left;
+    padding: 30px 50px;
+    &-wrap{
+      flex: 1;
+    }
+  }
+
+  &__pagination{
+    margin: 30px 0px;
+  }
+  &__btn-wrap{
+    text-align: center;
+  }
+  &__result{
+    display: flex;
+    height: 100%;
+  }
+}
+ .load{
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+  padding: 17px 38px;
+  min-width: 156px;
+  text-align: center;
+  max-width: 320px;
+  background-color: var(--bg-btn-main);
+  border-color: var(--bg-btn-main);
+  opacity: 0.7;
+ }
+ .content-page{
+  flex: 1;
+  padding-right: 80px;
+ }

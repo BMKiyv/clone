@@ -1,0 +1,20 @@
+.field-textarea{
+  &__label{}
+  &__field {
+    background-color: var(--color-white);
+    padding: 15px 16px;
+    border-radius: 5px;
+    border: 1px solid var(--border-input);
+    color: var(--dark-blue);
+    width: 100%;
+    height: 100px;
+    resize: none;
+
+    &--invalid{
+      border-color: var(--red);
+    }
+    &-light-blue{
+      background-color: var(--bg-very-light-blue);
+    }
+  }
+}

@@ -1,0 +1,691 @@
+.specialists {
+  &-content-wrap{
+    @media screen and (max-width: 1024px) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+
+  &__description {
+    line-height: 24px;
+    max-width: 690px;
+    margin: 0px auto;
+    padding-right: var(--m-horizont);
+    padding-left: var(--m-horizont);
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 56px;
+    //margin-bottom: 10px;
+    //padding: 0px 30px;
+    @media screen and (max-width: 340px) {
+      padding: 0px 20px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    //flex: 1;
+    align-items: baseline;
+    flex-direction: column;
+    max-width: 50%;
+    width: 100%;
+    @media screen and (min-width: 1024px) {
+      max-width: 28%;
+    }
+
+  }
+
+  &__img {
+    max-width: 110%;
+
+    &-wrap {
+      width: 160px;
+      height: 160px;
+      background-color: var(--pink);
+      margin: 0 auto;
+      border-radius: 80px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-position: center;
+      background-size: 110%;
+      background-repeat: no-repeat;
+      transform: translateZ(0);
+      @media (min-width:1024px){
+        margin: 0;
+      }
+    }
+
+    &--spatak_subbota {
+      background-image: url("/img/specialists/spatak_subbota.jpg");
+    }
+
+    &--sofia_lagutina {
+      background-image: url("/img/specialists/sofia_lagutina.jpg");
+    }
+
+    &--lesia_sak {
+      background-image: url("/img/specialists/lesia_sak.jpg");
+    }
+
+    &--bogdana_valigu {
+      background-image: url("/img/specialists/bogdana_valigura.jpg");
+    }
+
+
+
+    &--olga_mohniy {
+      background-image: url("/img/specialists/olga_mohniy.jpg");
+      background-size: 270%;
+      background-position: 56% 11%;
+    }
+
+    &--evelina_shapovalova {
+      background-image: url("/img/specialists/evelina_shapovalova.jpg");
+      background-size: 230%;
+      background-position: 36% 18%;
+    }
+
+    &--alla_atalieva {
+      background-image: url("/img/specialists/alla_atalieva.jpg");
+      background-size: 144%;
+      background-position: 38% 10%;
+    }
+
+    &--katerina_doljenko {
+      background-image: url("/img/specialists/katerina_doljenko.jpg");
+      background-size: 130%;
+      background-position: 33% 6%;
+    }
+
+    &--anna_marchenko_kovalenko {
+      background-image: url("/img/specialists/anna_marchenko_kovalenko.jpg");
+      background-size: 144%;
+      background-position: 56% 0%;
+    }
+    &--tatiana_bozhik {
+      background-image: url("/img/specialists/tatiana_bozhik.jpg");
+      background-size: 130%;
+      background-position: 56% 10%;
+    }
+    &--andriy_zaec {
+      background-image: url("/img/specialists/andriy_zaec.jpg");
+      background-size: 120%;
+      background-position: 56% 0%;
+    }
+    &--natalia_visaticka {
+      background-image: url("/img/specialists/natalia_visaticka.jpg");
+      background-size: 168%;
+      background-position: 48% 17%;
+    }
+    &--tatiana_akchar {
+      background-image: url("/img/specialists/tatiana_akchar.jpg");
+      background-size: 164%;
+      background-position: 64% 19%;
+    }
+    &--natalia_misan {
+      background-image: url("/img/specialists/natalia_misan.jpg");
+      background-size: 170%;
+      background-position: 44% 44%;
+    }
+    //---
+    &--jarina_marich {
+      background-image: url("/img/specialists/jarina_marich.jpg");
+      background-size: 212%;
+      background-position: 51% 8%;
+    }
+    &--artem_kozorezov {
+      background-image: url("/img/specialists/artem_kozorezov.jpg");
+      background-size: 120%;
+      background-position: 44% 11%;
+    }
+    &--inga_kolesnichenko {
+      background-image: url("/img/specialists/inga_kolesnichenko.jpg");
+      background-size: 240%;
+      background-position: 52% 51%;
+    }
+    &--elvira_habuseva {
+      background-image: url("/img/specialists/elvira_habuseva.jpg");
+      background-size: 112%;
+      background-position: 30% 34%;
+    }
+
+    &--olesa_fedyanina {
+      background-image: url("/img/specialists/olesa_fedyanina.jpg");
+      background-size: 177%;
+      background-position: 32% 17%;
+    }
+
+    &--violetta_kadoshnicova {
+      background-image: url("/img/specialists/violetta_kadoshnicova.jpg");
+      background-size: 270%;
+      background-position: 72% 9%;
+    }
+
+    &--irina_usenko {
+      background-image: url("/img/specialists/irina_usenko.jpg");
+      background-size: 112%;
+      background-position: 30% 34%;
+    }
+
+    &--irina_galanova {
+      background-image: url("/img/specialists/irina_galanova.jpg");
+      background-size: 190%;
+      background-position: 47% 33%;
+    }
+
+    &--yana_korobko {
+      background-image: url("/img/specialists/yana_korobko.jpg");
+      background-size: 100%;
+      background-position: 30% 0%;
+    }
+
+    &--olena_florinska {
+      background-image: url("/img/specialists/olena_florinska.jpg");
+      background-size: 160%;
+      background-position: 100% 10%;
+    }
+
+    &--yadviga_kozak {
+      background-image: url("/img/specialists/yadviga_kozak.jpg");
+      background-size: 145%;
+      background-position: 70% 20%;
+    }
+
+    &--omelchenko_olexandra {
+      background-image: url("/img/specialists/omelchenko_olexandra.jpg");
+      background-size: 226%;
+      background-position: 35% 20%;
+    }
+    &--yevgen_yermolovsky {
+      background-image: url("/img/specialists/yevgen_yermolovsky.jpg");
+      background-size: 170%;
+      background-position: 40% 5%;
+    }
+    &--tetyana_shevchenko {
+      background-image: url("/img/specialists/tetyana_shevchenko.jpg");
+      background-size: 145%;
+      background-position: 70% 20%;
+    }
+    &--sidorenko_victoria{
+      background-image: url("/img/specialists/sidorenko_victoria.jpg");
+      background-size: 125%;
+      background-position: 105% 0%;
+    }
+    &--svitlana_rovnova {
+      background-image: url("/img/specialists/svitlana_rovnova.jpg");
+      background-size: 157%;
+      background-position: 45% 24%;
+    }
+    &--mariya_shinkar {
+      background-image: url("/img/specialists/mariya_shinkar.jpg");
+      background-size: 300%;
+      background-position: 53% 41%;
+    }
+    &--valeria_volovik {
+      background-image: url("/img/specialists/valeria_volovik.jpg");
+      background-size: 100%;
+      background-position: 0% 0%;
+    }
+    &--elina_oleynik {
+      background-image: url("/img/specialists/elina_oleynik.jpg");
+      background-size: 220%;
+      background-position: 61% 5%;
+    }
+    &--svetlana_kantur {
+      background-image: url("/img/specialists/svetlana_kantur.jpg");
+      background-size: 150%;
+      background-position: 39% 0%;
+    }
+    &--vitalina_ustenko {
+      background-image: url("/img/specialists/vitalina_ustenko.jpg");
+      background-size: 200%;
+      background-position: 58% 10%;
+    }
+    &--elena_kolyada {
+      background-image: url("/img/specialists/elena_kolyada.jpg");
+      background-size: 100%;
+      background-position: 0% 0%;
+    }
+    &--olga_astahova {
+      background-image: url("/img/specialists/olga_astahova.jpg");
+      background-size: 100%;
+      background-position: 45% 24%;
+    }
+    &--anna_granko {
+      background-image: url("/img/specialists/anna_granko.jpg");
+      background-size: 112%;
+      background-position: 100% 5%;
+    }
+    &--anastasiya_eskina {
+      background-image: url("/img/specialists/anastasiya_eskina.jpg");
+      background-size: 125%;
+      background-position: 77% 40%;
+    }
+    &--inna_kotenko {
+      background-image: url("/img/specialists/inna_kotenko.jpg");
+      background-size: 125%;
+      background-position: 1% 1%;
+    }
+    &--mariya_kinashevska {
+      background-image: url("/img/specialists/mariya_kinashevska.jpg");
+      background-size: 115%;
+      background-position: 25% 0%;
+    }
+    &--inna_arbusova {
+      background-image: url("/img/specialists/inna_arbusova.jpg");
+      background-size: 270%;
+      background-position: 51% 6%;
+    }
+    &--katerina_misenko {
+      background-image: url("/img/specialists/katerina_misenko.jpg");
+      background-size: 179%;
+      background-position: 45% 34%;
+    }
+    &--anastasiya_tokareva {
+      background-image: url("/img/specialists/anastasiya_tokareva.jpg");
+      background-size: 140%;
+      background-position: 64% 0%;
+    }
+    &--inna_ragulska {
+      background-image: url("/img/specialists/inna_ragulska.jpg");
+      background-size: 400%;
+      background-position: 44% 15%;
+    }
+    &--nataliya_kuchak {
+      background-image: url("/img/specialists/nataliya_kuchak.jpg");
+      background-size: 126%;
+      background-position: 20% 0%;
+    }
+    &--nazarenko_nataliya {
+      background-image: url("/img/specialists/nazarenko_nataliya.jpg");
+      background-size: 110%;
+      background-position: 100% 0%;
+    } 
+    &--yulia_kuzmenko {
+      background-image: url("/img/specialists/yulia_kuzmenko.jpg");
+      background-size: 150%;
+      background-position: 60% 8%;
+    }
+    &--kovalchuk_olena {
+      background-image: url("/img/specialists/kovalchuk_olena.jpg");
+      background-size: 112%;
+      background-position: 112% 8%;
+    }
+    &--nataliya_gallecka {
+      background-image: url("/img/specialists/nataliya_gallecka.jpg");
+      background-size: 124%;
+      background-position: 60% 73%;
+    }
+    &--myroslava_kirilyuk {
+      background-image: url("/img/specialists/myroslava_kirilyuk.jpg");
+      background-size: 100%;
+      background-position: 42% 15%;
+    }
+    &--kuc_tetyana {
+      background-image: url("/img/specialists/kuc_tetyana.jpg");
+      background-size: 110%;
+      background-position: 0% 0%;
+    }
+    &--bershadska_olexandra {
+      background-image: url("/img/specialists/bershadska_olexandra.jpg");
+      background-size: 100%;
+      background-position: 60% 60%;
+    }
+    &--stembiy_roksolana {
+      background-image: url("/img/specialists/stembiy_roksolana.jpg");
+      background-size: 100%;
+      background-position: 60% 60%;
+    }
+    &--lisa_tamara {
+      background-image: url("/img/specialists/lisa_tamara.jpg");
+      background-size: 220%;
+      background-position: 52% 46%;
+    }
+    &--osetrov_ostap {
+      background-image: url("/img/specialists/osetrov_ostap.jpg");
+      background-size: 131%;
+      background-position: 60% 73%;
+    }
+    &--ilchenko_yana {
+      background-image: url("/img/specialists/ilchenko_yana.jpg");
+      background-size: 174%;
+      background-position: 60% 0%;
+    }
+    &--vitvitcka_olexandra {
+      background-image: url("/img/specialists/vitvitcka_olexandra.jpg");
+      background-size: 186%;
+      background-position: 60% 10%;
+    }
+    &--gnat_liudmila {
+      background-image: url("/img/specialists/gnat_liudmila.jpg");
+      background-size: 100%;
+      background-position: 0% 0%;
+    }
+    &--melnikova_yevgenia {
+      background-image: url("/img/specialists/melnikova_yevgenia.jpg");
+      background-size: 100%;
+      background-position: 0% 10%;
+    }
+    &--yakovenko_lesya {
+      background-image: url("/img/specialists/yakovenko_lesya.jpg");
+      background-size: 270%;
+      background-position: 56% 10%;
+    }
+    &--shwec_vladislava {
+      background-image: url("/img/specialists/shwec_vladislava.jpg");
+      background-size: 100%;
+      background-position: 60% 11%;
+    }
+    &--bekar_misha {
+      background-image: url("/img/specialists/bekar_misha.jpg");
+      background-size: 175%;
+      background-position: 60% 73%;
+    }
+    &--andreeva_anna {
+      background-image: url("/img/specialists/andreeva_anna.jpg");
+      background-size: 143%;
+      background-position: 95% 25%;
+    }
+    &--rozumyak_olga {
+      background-image: url("/img/specialists/rozumyak_olga.jpg");
+      background-size: 115%;
+      background-position: 80% 0%;
+    }
+    &--denyo_nika {
+      background-image: url("/img/specialists/denyo_nika.jpg");
+      background-size: 111%;
+      background-position: 100% 0%;
+    }
+    &--buligina_dina {
+      background-image: url("/img/specialists/buligina_dina.jpg");
+      background-size: 120%;
+      background-position: 100% 50%;
+    }
+    &--mazur_oksana {
+      background-image: url("/img/specialists/mazur_oksana.jpg");
+      background-size: 115%;
+      background-position: 60% 48%;
+    }
+    &--bor_liliya {
+      background-image: url("/img/specialists/bor_liliya.jpg");
+      background-size: 300%;
+      background-position: 38% 0%;
+    }
+    &--copa_victoria {
+      background-image: url("/img/specialists/copa_victoria.jpg");
+      background-size: 110%;
+      background-position: 60% 26%;
+    }
+    &--morozova_olena {
+      background-image: url("/img/specialists/morozova_olena.jpg");
+      background-size: 150%;
+      background-position: 60% 0%;
+    }
+    &--daniluk_tetyana {
+      background-image: url("/img/specialists/daniluk_tetyana.jpg");
+      background-size: 150%;
+      background-position: 90% 40%;
+    }
+    &--konopacka_maryana {
+      background-image: url("/img/specialists/konopacka_maryana.jpg");
+      background-size: 100%;
+      background-position: 60% 0%;
+    }
+    &--gilcher_catherine {
+      background-image: url("/img/specialists/gilcher_catherine.jpg");
+      background-size: 100%;
+      background-position: 0% 0%;
+    }
+    &--bigdash_olga {
+      background-image: url("/img/specialists/bigdash_olga.jpg");
+      background-size: 135%;
+      background-position: 25% 0%;
+    }
+
+    @media screen and (min-width: 768px) {
+      &--spatak_subbota {
+          background-size: 200%;
+          background-position: 50% 12%;
+      }
+
+      &--sofia_lagutina {
+          background-position: 28% 12%;
+          background-size: 164%;
+
+      }
+
+      &--lesia_sak {
+        background-size: 126%;
+        background-position: 50% 20%;
+      }
+
+      &--bogdana_valigu {
+        background-size: 160%;
+        background-position: 40% 7%;
+      }
+    }
+  }
+
+  &__author {
+    margin-top: 27px;
+    margin-bottom: 13px;
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 37px;
+    letter-spacing: 0.01em;
+    font-style: normal;
+  }
+
+  &__text {
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
+
+    &-wrap {
+      text-align: left;
+    }
+
+    &--desktop {
+      display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+      &--desktop {
+        display: block;
+      }
+      &--mobile {
+        display: none;
+      }
+    }
+  }
+  &_wrap-btn{
+    margin-top: 16px;
+  }
+
+  .slide{
+    //background: var(--bg-very-ligh);
+    background-color: transparent;
+  }
+  .carousel .control-dots{
+    margin: 0;
+  }
+  .carousel .control-dots .dot{
+    background-color: var(--color-pink);
+    box-shadow: none;
+    outline: none;
+  }
+  .carousel.carousel-slider .control-arrow:hover{
+    background-color: rgba(0, 0, 0, 0.01);
+  }
+  // .carousel .control-prev.control-arrow{
+  //   &:before{
+  //     border-right-color: var(--bg-btn-main);
+  //   }
+  // }
+
+  // .carousel .control-next.control-arrow{
+  //   &:before{
+  //   border-left-color: var(--bg-btn-main);
+  // }
+  // }
+  @media screen and (min-width: 768px) {
+    .slide {
+      //background: var(--bg-very-ligh);
+      background-color: transparent;
+      //align-items: center;
+      //justify-content: center;
+      //display: flex;
+    }
+
+    .carousel .control-dots {
+      margin: 0;
+    }
+
+    .carousel .control-dots .dot {
+      background: var(--color-pink);
+      box-shadow: none;
+      outline: none;
+      width: 40px;
+      height: 6px;
+      margin: 0 4px;
+      border-radius: 10%;
+    }
+    .carousel .slider-wrapper {
+      width: 90%;
+    }
+
+    .carousel.carousel-slider .control-arrow:hover {
+      background-color: transparent;
+    }
+
+    .carousel .control-prev.control-arrow {
+      left: 14px;
+
+      &:before {
+        opacity: 0;
+      }
+
+      &:after {
+        content: "";
+        width: 54px;
+        height: 54px;
+        display: inline-block;
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--color-white);
+        border-radius: 10%;
+        background-image: url("/img/chevron-left-solid.svg");
+        background-position: 20px center;
+        background-repeat: no-repeat;
+        background-size: 12px;
+      }
+    }
+
+    .carousel .control-next.control-arrow {
+      right: 14px;
+
+      &:before {
+        opacity: 0;
+      }
+
+      &:after {
+        content: "";
+        width: 54px;
+        height: 54px;
+        display: inline-block;
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--color-white);
+        border-radius: 10%;
+        background-image: url("/img/chevron-right-solid.svg");
+        background-position: 22px center;
+        background-repeat: no-repeat;
+        background-size: 12px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .slide{
+      //background: var(--bg-very-ligh);
+      background-color: transparent;
+    }
+    .carousel .control-dots{
+      margin: 0;
+    }
+    .carousel .control-dots .dot{
+      background: var(--color-pink);
+      width: 40px;
+      height: 6px;
+      margin: 0 4px;
+      border-radius: 10%;
+      box-shadow: none;
+      outline: none;
+    }
+    .carousel.carousel-slider .control-arrow:hover{
+      background-color: rgba(0, 0, 0, 0.01);
+    }
+    .carousel .control-prev.control-arrow {
+      left: 14px;
+
+      &:before {
+        opacity: 0;
+      }
+
+      &:after {
+        content: "";
+        width: 54px;
+        height: 54px;
+        display: inline-block;
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--color-white);
+        border-radius: 10%;
+        background-image: url("/img/chevron-left-solid.svg");
+        background-position: 20px center;
+        background-repeat: no-repeat;
+        background-size: 12px;
+      }
+    }
+    .carousel .control-next.control-arrow {
+      right: 14px;
+
+      &:before {
+        opacity: 0;
+      }
+
+      &:after {
+        content: "";
+        width: 54px;
+        height: 54px;
+        display: inline-block;
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--color-white);
+        border-radius: 10%;
+        background-image: url("/img/chevron-right-solid.svg");
+        background-position: 22px center;
+        background-repeat: no-repeat;
+        background-size: 12px;
+      }
+    }
+  }
+}

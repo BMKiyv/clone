@@ -1,0 +1,25 @@
+.informPanel{
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 300;
+    display:flex;
+    justify-content: space-around;
+    align-items: baseline;
+
+    &-inform{
+        border: 1px solid var(--border-input);
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+    text-align: center;
+    background: var(--bg-btn-main);
+    }
+    &-ctrl{
+        font-weight: bold;
+        color:var(--bg-btn-main);
+        margin-left: 5px;
+    }
+    &--multiple{
+        @media screen and (max-width: 1023px) {display: none}
+    }
+}

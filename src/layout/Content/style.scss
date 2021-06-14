@@ -1,0 +1,10 @@
+.container {
+  $this: 'content';
+  overflow: auto;
+
+  &_child {
+    max-width: 970px;
+    // margin-left: auto;
+    // margin-right: auto;
+  }
+}

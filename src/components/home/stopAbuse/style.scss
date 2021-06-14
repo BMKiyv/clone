@@ -1,0 +1,54 @@
+.abuse{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(var(--max-w) + var(--m-horizont) * 2);
+    margin-bottom: 50px;
+    @media (min-width:768px){
+        background-color: #EBE6E4;
+        margin-top: 50px;
+    }
+    &-wrap{
+        display: flex;
+        flex-direction: row;
+        @media (max-width:767px) {
+            display: flex;
+            flex-direction: column-reverse;
+            height: 830px;
+            margin: 30px 15px;
+            overflow: hidden;
+            background-color: #EBE6E4;
+        }
+    }
+    &-text{
+        padding: 24px;
+        flex: 1;
+        text-align: left;
+        @media (min-width:1024px){
+            width: 55%;
+            padding: 50px 0px 75px 75px;
+        }
+    }
+    &-img{
+        width: 354px;
+        height: 354px;
+        background-image: url('/img/abuse-bg1.svg'), url('/img/abuse-img.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto 121%, auto 61%;
+        flex: 1;
+        @media (min-width:768px){
+        width: 200px;
+        height: auto;
+        background-image: url('/img/abuse-bg.svg'), url('/img/abuse-img.svg');
+        background-position: 121%, 73% 40%;
+        background-repeat: no-repeat;
+        background-size: auto 102%, auto 40%;
+        }
+    }
+    &-btn {
+        @media (min-width:1024px){
+            margin-top: 30px;
+        }
+        
+    }
+}

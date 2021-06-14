@@ -1,0 +1,16 @@
+.btn-more {
+  display: inline-block;
+  text-decoration: underline;
+  color: var(--dark-blue);
+  width: 100%;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &_text {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+  }
+}

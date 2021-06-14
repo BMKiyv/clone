@@ -1,0 +1,17 @@
+{
+    "title": "Как мы работаем",
+    "list": [
+        {
+            "urlSvg": "/img/howWeWork/firstWork.svg",
+            "name": "Ви заполняете анкету"
+        },
+        {
+            "urlSvg": "/img/howWeWork/secondWork.svg",
+            "name": "С вами связывается психолог"
+        },
+        {
+            "urlSvg": "/img/howWeWork/thirdWork.svg",
+            "name": "Вместе достигаем эмоционального комфорта"
+        }
+    ]
+}

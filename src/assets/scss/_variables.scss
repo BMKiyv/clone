@@ -1,0 +1,80 @@
+:root {
+  // FONTS ------------------------
+  --font-main: 'Futura PT';
+
+  // COLORS ------------------------
+  --color-white: #FFFFFF;
+  --color-white-rgb: 255, 255, 255;
+  --color-black: #333333;
+  --color-pink: linear-gradient(266.25deg, #D4487D 5.97%, #DB6A48 94.97%, #E57857 94.97%);
+  ;
+  ;
+
+  --bg-rate: #FDD302;
+  --dark-blue: #131E52;
+  --dark-violet: #1E2546;
+  --light-gray: #EDEDED;
+  --bg-light: #F6F7FB;
+  --bg-dark: #46435C;
+  --bg-btn-main: #37A8FA;
+  --bg-btn-main-hover: #5CB8FA;
+  --bg-btn-second: #78798c;
+  --bg-header: #ffffff;
+  --bg-open-header: #ffffff;
+  --color-light-blue: #EBF0FD;
+  --bg-light-blue: #EBE6E4;
+  --bg-very-light-blue: #FFFFFF;
+  --border-input: #131e521f;
+  --bg-loader: rgba(255, 255, 255, 0.7);
+  --bg-green: #38E6D2;
+  --pink: #DB6A48;
+  --red: #E95146;
+  --red-review: #EA5C52;
+  --dev-background: #E1E5ED;
+  --bot-color: #2A6ACC;
+  --bot-color-rgb: rgba(42, 106, 204, 0.6);
+
+  // ANIMATION ------------------------
+  --anim-fast: 0.15s cubic-bezier(0, 0, 0.3, 1);
+  --anim-slow: 0.25s cubic-bezier(0, 0, 0.3, 1);
+
+  // MARGINS ------------------------
+  --m-horizont: 1px;
+  --m-vertical: 50px;
+
+  // SIZE -----------------------
+  --max-w: 1024px;
+  --media-desctop: 1024px;
+  --media-mob: 1023px;
+  //FONT-SIZE ----------------------
+  --main-title: 30px;
+  --second-title: 24px;
+  --title: 26px;
+  --default-size: 16px;
+
+
+
+  --height-header: 70px;
+}
+@media screen and (min-width: 1024px){
+  :root{
+    //FONT-SIZE ----------------------
+    --main-title: 36px;
+    --second-title: 32px;
+    --title: 43px;
+    --default-size: 19px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  :root{
+    //FONT-SIZE ----------------------
+    --main-title: 28px;
+    --second-title: 30px;
+    --title: 28px;
+    --default-size: 15px;
+
+    // MARGINS ------------------------
+    --m-horizont: 15px;
+  }
+}

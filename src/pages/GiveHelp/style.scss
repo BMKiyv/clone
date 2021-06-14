@@ -1,0 +1,124 @@
+.give-help {
+
+  max-width: calc(380px + var(--m-horizont) * 2);
+  padding: 0 var(--m-horizont);
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__title{
+    text-align: center;
+  }
+
+  &__pagination {
+    margin: 30px 0px;
+  }
+
+  &__btn-wrap {
+    text-align: center;
+  }
+
+  &__result {
+    display: flex;
+    height: 100%;
+  }
+
+}
+.resume{
+  margin-top: 40px;
+}
+
+.field-file {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    flex-direction: column-reverse;
+  }
+   
+  
+
+  &__square {
+    width: 120px;
+    height: 120px;
+    background-color: var(--color-white);
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    @media screen and (min-width: 1024px) {
+      &:hover {
+        opacity: .8;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      width: 356px;
+      height: 284px;
+    }
+
+    &__resume{
+      height:40px;
+      width: 120px;
+      background-color: var(--color-white);
+      padding: 10px;
+      @media screen and (min-width: 768px) {
+        height:70px;
+        width: 356px;
+      }
+    }
+  }
+
+  &__icon {
+    &-wrap {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex: 1;
+      border: 1px dashed var(--bg-btn-main);
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+    &--invalid {
+        border-color: var(--red);
+      }
+    }
+
+    font-size: 60px;
+    color: var(--bg-btn-main);
+
+    @media screen and (min-width: 768px) {
+      font-size: 120px;
+    }
+
+    &--invalid {
+      color: var(--red);
+    }
+
+    &-text {
+      font-weight: bold;
+      display: none;
+      text-align: center;
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
+    }
+
+  }
+
+
+  &__text {
+    font-weight: 300;
+    font-size: 14px;
+    padding-top: 10px;
+    @media screen and (min-width: 768px) {
+      display: block;
+      padding: 0;
+      margin: 0px auto 5px;
+      max-width: 230px;
+    }
+  }
+}

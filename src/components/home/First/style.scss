@@ -1,0 +1,140 @@
+.first {
+
+  height: calc(100vh - 100vh / 50);
+  @media screen and (max-width: 340px) {
+    height: 100vh;
+  }
+  max-height: 638px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  background-color: var(--bg-light-blue);
+  overflow: hidden;
+  @media screen and (min-width: 1024px) {
+    max-height: 652px;
+  }
+  /*  @media screen and (min-width: 768px) {
+      justify-content: center;
+    }*/
+
+  &__content-wrap {
+    color: var(--color-black);
+    text-align: center;
+    //max-width: calc(544px + var(--m-horizont) * 2);
+    max-width: calc(650px + var(--m-horizont) * 2);
+    z-index: 1;
+    @media screen and (min-width: 768px) {
+     // margin-bottom: calc(var(--height-header);
+      margin-bottom: 30px;
+    }
+  }
+
+  &_absolute {
+    height: 100%;
+    width: 200vw;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--bg-open-header);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  &_img {
+    height: inherit;
+    width: 100vw;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &--home {
+      @media screen and (max-width: 767px) {
+        background-image: url("/img/bg/home_mobile.png");
+      }
+      @media screen and (min-width: 768px) {
+        background-image: url("/img/bg/home_desktop.png");
+      }
+    }
+
+    &--psychologists {
+      @media screen and (max-width: 767px) {
+        background-image: url("/img/bg/psychologists_mobile.png");
+      }
+      @media screen and (min-width: 768px) {
+        background-image: url("/img/bg/psychologists_desktop.png");
+      }
+    }
+  }
+
+  &_title {
+    margin-top: 0;
+    font-weight: bold;
+    margin-bottom: 16px;
+    line-height: 55px;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 600;
+    text-shadow: 0px 0px 100px #000;
+    @media (max-width: 767px){
+      text-align: left;
+    }
+  }
+
+  &_text {
+    font-size: 19px;
+    line-height: 24px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (max-width: 340px) {
+      font-size: 14px;
+    }
+
+    &--desktop {
+      display: none;
+      @media screen and (min-width: 768px) {
+        display: block;
+        & + p {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &_btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+
+    @media screen and (max-width: 340px) {
+      margin-top: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+  }
+
+  &_btn {
+    &-main {
+      margin-bottom: 15px;
+      width: 100%;
+      @media screen and (min-width: 768px) {
+        margin-right: 16px;
+        width: 300px;
+      }
+    }
+
+  }
+}

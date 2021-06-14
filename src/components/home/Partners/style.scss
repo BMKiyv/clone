@@ -1,0 +1,112 @@
+.partner {
+  .title {
+    margin-bottom: 0;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+
+  &__item-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    @media (min-width:1024px){
+      width: calc(100% / 2);
+    }
+
+/*    &:nth-child(4){
+      figure{
+        width: 110px;
+      }
+    }*/
+  }
+
+  &__item {
+    margin: 20px 6px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--bg-light-blue);
+    flex: 1;
+    overflow: hidden;
+    padding: 24px;
+    @media screen and (min-width: 768px) {
+      background: var(--bg-light-blue);
+      overflow: hidden;
+      padding: 38px 20px;
+      &:hover{
+        opacity: 0.7;
+      }
+    }
+
+  }
+
+  &__img {
+    object-fit: contain;
+
+    &-wrap {
+      //width: 80px;
+      //height: 80px;
+      max-width: 92px;
+      min-height: 80px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+
+    &--nmu {
+      padding: 10px;
+    }
+  }
+
+  &__description {
+    &-wrap {
+      //display: none;
+      //position: relative;
+      @media screen and (min-width: 768px) {
+        display: block;
+        margin-top: 20px;
+        flex: 1;
+
+/*        &:before {
+          content: "";
+          width: 100%;
+          height: 40%;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          transform: translateY(0%);
+          !* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6f9fe+0,f6f9fe+70&0+0,0.65+70 *!
+          background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 1) 70%); !* FF3.6-15 *!
+          background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 1) 70%); !* Chrome10-25,Safari5.1-6 *!
+          background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 1) 70%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00f6f9fe', endColorstr='#a6f6f9fe', GradientType=0); !* IE6-9 *!
+
+        }*/
+      }
+    }
+
+    font-size: 14px;
+  }
+}
+div.partner__item-wrap:first-of-type {
+  width: 100%;
+}
+.partner__item-wrap >.partner__item ~ .partner__item {
+  display: flex;
+  flex-direction: row;
+}
+
+.home > section:not(:first-of-type) + .partner{
+  background-color: var(--color-white);
+}
+

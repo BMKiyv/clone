@@ -1,0 +1,37 @@
+.privacy-policy{
+    &__title{
+      font-size: 30px;
+  
+      @media screen and (min-width: 768px) {
+        font-size: 33px;
+      }
+    }
+    p{
+      line-height: 1.5;
+    }
+    &__tex{
+      &-wrap{
+        margin-bottom: 32px;
+      }
+    }
+    &__subtitle{
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    ul{
+      list-style: inside;
+    }
+    ol > li{
+      margin-bottom: 20px;
+      line-height: 1.3;
+    }
+    &__outside{
+      font-style: italic;
+    }
+  
+    @media screen and (max-width: 767px) {
+      ol,ul{
+        padding-left: 20px;
+      }
+    }
+  }

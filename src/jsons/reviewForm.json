@@ -1,0 +1,52 @@
+{
+  "consultation_review": [
+    {
+      "val": "Так",
+      "title": "Так"
+    },
+    {
+      "val": "Ні",
+      "title": "Ні"
+    },
+    {
+      "val": "other",
+      "title": "Інше"
+    }
+  ],
+  "consultation_count": [
+    {
+      "val": "1",
+      "title": "1"
+    },
+    {
+      "val": "2",
+      "title": "2"
+    },
+    {
+      "val": "3",
+      "title": "3"
+    }
+  ],
+  "expert_point": [
+    {
+      "val": "1",
+      "title": "1"
+    },
+    {
+      "val": "2",
+      "title": "2"
+    },
+    {
+      "val": "3",
+      "title": "3"
+    },
+    {
+      "val": "4",
+      "title": "4"
+    },
+    {
+      "val": "5",
+      "title": "5"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+.psychologists {
+  text-align: center;
+  background-color: var(--color-white);
+
+/*  .content-wrap {
+    @media screen and (min-width: 1024px){
+      padding: 50px var(--m-horizont);
+    }
+  }*/
+
+/*  @media screen and (min-width: 768px){
+    .first_btn-main{
+      width: 256px;
+    }
+  }*/
+
+  .infographic {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & > section {
+    flex: 1;
+  }
+
+  &__wrap{
+    text-align: center;
+    margin-top: -80px;
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0px 10px;
+    font-weight: bold;
+    &-wrap{
+      max-width: 300px;
+     margin: 30px auto 0px;
+    }
+  }
+
+}
+
+

@@ -1,0 +1,120 @@
+.container {
+  min-height: calc(100vh - 100vh / 50);
+  display: flex;
+  //align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--bg-light-blue);
+
+  &__child {
+    width: 100%;
+
+    &--second {
+      margin: calc(var(--height-header) + var(--m-vertical)) var(--m-horizont) var(--m-vertical);
+    }
+
+    &:not(.container__child--second) {
+      .content-wrap {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+    }
+  }
+}
+
+.m-width {
+  max-width: calc(var(--max-w) + var(--m-horizont) * 2);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main-title {
+  font-size: var(--main-title);
+  margin-top: 0px;
+  font-weight: bold;
+  margin-bottom: 22px;
+}
+
+.second-title {
+  font-size: var(--second-title);
+  margin-top: 0px;
+  font-weight: bold;
+  margin-bottom: 22px;
+}
+
+.title {
+  font-size: 43px;
+  line-height: 44px;
+  margin-top: 0px;
+  font-weight: 600;
+  margin-bottom: 22px;
+  text-align: left;
+  @media (min-width:1024px){
+    line-height: 55px;
+    margin-bottom: 17px;
+    text-align: center;
+  }
+}
+
+.loading {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  //background-color: var(--bg-light-blue);
+}
+.help{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: var(--max-w);
+  height: 50vh;
+}
+
+
+.content {
+  z-index: 2;
+
+  &-wrap {
+    padding-right: var(--m-horizont);
+    padding-left: var(--m-horizont);
+    max-width: calc(var(--max-w) + 100px + var(--m-horizont) * 2);
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    @media screen and (min-width: 1024px) {
+
+    }
+  }
+
+}
+
+.loader {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: var(--bg-loader);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  &__text {
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 8px;
+    color: var(--red)
+  }
+}
+
+.anchor {
+  position: relative;
+  top: -50px;
+}

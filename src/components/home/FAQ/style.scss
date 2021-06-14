@@ -1,0 +1,11 @@
+.faq {
+
+  &_list {
+    & > * {
+      margin-bottom: 6px;
+    }
+  }
+  &_btn-more{
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,107 @@
+.generalModal {  
+    &__container{
+      max-width: 478px;
+      margin: 0 28px;
+      background-color: var(--color-white);
+      border-radius: 2px;
+      position: relative;
+      padding: 20px 15px;
+      @media screen and (max-width: 340px) {
+        margin: 0 10px;
+        padding: 14px 10px;
+      }
+      @media screen and (min-width: 768px) {
+        padding: 25px 33px;
+      }
+    }
+  
+    &__close{
+      width: 24px;
+      height: 24px;
+      position: relative;
+  
+      &-wrap{
+        display: flex;
+        justify-content: flex-end;
+        @media screen and (max-width: 340px) {
+          margin-bottom: -10px;
+        }
+      }
+  
+      &:before,&:after{
+        content: '';
+        position: absolute;
+        width: 70%;
+        height: 2px;
+        background-color: #9296A7;
+        top: 50%;
+        left: 50%
+      }
+      &:before{
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+      &:after{
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+  
+    }
+  
+    &__br{
+      @media screen and (max-width: 340px) {
+       display: none;
+      }
+    }
+  
+    &__title{
+      font-size: 24px;
+      margin: 0 10px 20px;
+      font-weight: bold;
+      @media screen and (max-width: 340px) {
+        margin-bottom: 14px;
+      }
+    }
+  
+    &__content{
+      background-color: var(--bg-very-light-blue);
+      padding: 20px;
+      margin-bottom: 20px;
+      letter-spacing: 0.1px;
+      font-size: 14px;
+      @media screen and (max-width: 500px) {
+        overflow: auto;
+        max-height: 420px;
+      }
+      @media screen and (max-width: 380px) {
+        max-height: 340px;
+      }
+      @media screen and (max-width: 350px) {
+        padding: 10px;
+        margin-bottom: 14px;
+        max-height: 290px;
+      }
+      @media screen and (min-width: 768px) {
+        padding: 25px;
+      }
+    }
+  
+    &__btn{
+      &-wrap{
+        display: flex;
+        justify-content: space-around;
+      }
+  
+      &:hover {
+        background-color: var(--bg-btn-main-hover);
+      }
+  
+      width: 162px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      background-color: var(--bg-btn-main);
+      border-radius: 27px;
+    }
+  }
+  

@@ -1,0 +1,52 @@
+.privacy{
+
+  // @media screen and (min-width: 768px) {
+  //   background-image: url("/img/inf-privacy-bg.svg");
+  // }
+  background-position: 50% -125%;
+  background-repeat: no-repeat;
+
+  &-wrap{
+    padding: 0 100px 50px;
+    @media (max-width:767px) {
+      padding: 0 15px 50px;
+    }
+  }
+
+  .content-wrap{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    //max-width: calc(var(--m-horizont) + 600px + var(--m-horizont));
+    max-width: 100%;
+    @media screen and (min-width: 768px) {
+      margin-bottom: -70px;
+      max-width: 39%;
+    }
+  }
+
+  p{
+    line-height: 24px;
+    font-size: 19px;
+    text-align: left;
+  }
+  &__infographic{
+    max-width: 300px;
+    margin: 0 auto;
+    @media screen and (min-width: 1024px) {
+      max-width: 315px;
+    }
+    img{
+     // width: 100%;
+      @media screen and (max-width: 1023px) {
+        display: flex;
+      }
+    }
+  }
+  &-content{
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+}
