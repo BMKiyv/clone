@@ -50,7 +50,7 @@ export interface buttonMoreI {
 }
 
 export interface buttonI {
-    url?: string,
+    url?: string | false,
     theme: string,
     title: string,
     onPress?: () => void,
@@ -94,6 +94,8 @@ export interface yourHelpI {
     description: string,
     bg: string,
     img: string,
+    url?: string,
+    onPress?: string,
 }
 
 export interface getHelpI {

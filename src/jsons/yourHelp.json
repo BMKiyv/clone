@@ -5,7 +5,8 @@
         "src": "/img/help24-7.svg",
         "btnTitle": "Подивитися контакти",
         "bg": " #E59889",
-        "img": "/img/icon_up.svg"
+        "img": "/img/icon_up.svg",
+        "onPress": "1"
     },
     {
         "title": "Розірви коло",
@@ -13,7 +14,8 @@
         "src": "/img/rozirvy_kolo.svg",
         "btnTitle": "Перейти на сайт",
         "bg": " #991F66",
-        "img": "/img/icon_up2.svg"
+        "img": "/img/icon_up2.svg",
+        "url": "https://rozirvykolo.org/"
     },
     {
         "title": "Товариство Червоного Хреста України",
@@ -21,6 +23,7 @@
         "src": "/img/red_christ.svg",
         "btnTitle": "Перейти на сайт",
         "bg": " #F9F9F9",
-        "img": "/img/icon_up2.svg"
+        "img": "/img/icon_up2.svg",
+        "url": "https://redcross.org.ua/"
     }
 ]

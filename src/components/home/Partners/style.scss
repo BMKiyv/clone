@@ -101,10 +101,6 @@
 div.partner__item-wrap:first-of-type {
   width: 100%;
 }
-.partner__item-wrap >.partner__item ~ .partner__item {
-  display: flex;
-  flex-direction: row;
-}
 
 .home > section:not(:first-of-type) + .partner{
   background-color: var(--color-white);

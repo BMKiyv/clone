@@ -32,11 +32,11 @@ const Specialist:React.FC  = () => {
         let width = window.innerWidth;
 
         for (const item of specialists) {
-            console.log("-----", countArrays, countElements, width);
+            //console.log("-----", countArrays, countElements, width);
             if (countElements < 3 && width > 1023) {
                 countElements += 1;
-            } else if (countElements <= 1 && width < 1024) {
-                countElements = 1;
+            } else if (countElements === 1 && width < 1024) {
+                countElements += 1;
                 countArrays += 1;
                 groupArrSpec[countArrays] = [];
             } else {
