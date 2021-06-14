@@ -1,0 +1,13 @@
+[
+    { "val": "father", "title": "Батько" },
+    { "val": "mother", "title": "мати" },
+    { "val": "brother", "title": "брат" },
+    { "val": "syster", "title": " сестра" },
+    { "val": "sibling", "title": "родич" },
+    { "val": "family`s_friend", "title": "друг сім’ї" },
+    { "val": "husband", "title": "чоловік" },
+    { "val": "wife", "title": "дружина" },
+    { "val": "son", "title": "син" },
+    { "val": "dother", "title": " дочка" }
+  ]
+  

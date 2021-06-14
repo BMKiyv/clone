@@ -17,7 +17,7 @@ import FieldTextarea from "@/components/fields/FieldTextarea";
 import FieldCheckbox from "@/components/fields/FieldCheckbox";
 import FieldPhone from "@/components/fields/FieldPhone";
 import ResultFotm from "@/components/ResultFotm";
-import { diagnosis } from '@/jsons';
+import { diagnosis, abuser } from '@/jsons';
 import Modal from '../../components/Modal';
 import GeneralModal from '../../components/modals/GeneralModal';
 //import OverLoad from '../../components/modals/templatesModal/OverLoad';
@@ -35,7 +35,7 @@ import { sendValidPhone, sendRequisition } from "@/API";
 
 const GetHelp:React.FC = () => {
     useRemoveKeydown();
-    const [activeSlide, setActiveSlide] = useState(1);
+    const [activeSlide, setActiveSlide] = useState(3);
     const [loader, setLoader] = useState(false);
     const [openModal, setOpenModal] = useState(true);
     const [resultSend, setResultSend] = useState<number | null>(null);
@@ -51,25 +51,33 @@ const GetHelp:React.FC = () => {
         phone:                       "+380 ",
         diagnosis:                   "",
         diagnosisDescription:        "",
+        inChildhood:                 "yes",
+        inPresent:                   "present",
+        abuser:                      "",
+        abuseDescription:            "",
         expertGender:                "no_matter",
-        feedbackType:                "phone",
-        feedbackContact:             "",
-        feedbackWeekDay:             "mon",
-        feedbackTime:                "8:00",
-        agree:                       false,
+        //feedbackType:                "phone",
+        //feedbackContact:             "",
+        //feedbackWeekDay:             "mon",
+        //feedbackTime:                "8:00",
+        //agree:                       false,
         nameInvalid:                 null,
         surnameInvalid:              null,
         genderInvalid:               null,
         phoneInvalid:                null,
         diagnosisInvalid:            null,
         diagnosisDescriptionInvalid: null,
+        abuseDescriptionInvalid:     null,
         expertGenderInvalid:         null,
-        feedbackTypeInvalid:         null,
-        feedbackContactInvalid:      null,
-        feedbackWeekDayInvalid:      null,
-        feedbackTimeInvalid:         null,
+        //feedbackTypeInvalid:         null,
+        //feedbackContactInvalid:      null,
+        //feedbackWeekDayInvalid:      null,
+        //feedbackTimeInvalid:         null,
         //isAdultInvalid:              null,
         agreeInvalid:                null,
+        inChildhoodInvalid:          null,
+        inPresentInvalid:            null,
+        abuserInvalid:               null,
     });
     const [dataForSending, setDataForSending] = useState({} as sendRequisitionI);
 
@@ -166,9 +174,13 @@ const GetHelp:React.FC = () => {
         // let isAdult:returnIsInvalid;
         let diagnosis:returnIsInvalid;
         let diagnosisDescription:returnIsInvalid;
-        let feedbackType:returnIsInvalid;
-        let feedbackContact:returnIsInvalid | boolean;
-        let agree:returnIsInvalid;
+        // let feedbackType:returnIsInvalid;
+        // let feedbackContact:returnIsInvalid | boolean;
+        // let agree:returnIsInvalid;
+        let inChildhood:returnIsInvalid;
+        let inPresent:returnIsInvalid;
+        let abuser:returnIsInvalid;
+        let abuseDescription:returnIsInvalid;
 
         switch (activeSlide) {
             case 1:
@@ -193,11 +205,13 @@ const GetHelp:React.FC = () => {
 
                 diagnosis = isInvalid("diagnosis", data.diagnosis);
                 diagnosisDescription = isInvalid("diagnosisDescription", data.diagnosisDescription);
+                inChildhood = isInvalid("isChecked", `${data.inChildhood}`);
 
                 setHideModalPhone(true);
 
                 newData.diagnosisInvalid = diagnosis;
                 newData.diagnosisDescriptionInvalid = diagnosisDescription;
+                newData.inChildhoodInvalid = inChildhood;
 
                 if (!diagnosis && !diagnosisDescription) {
                     setActiveSlide((prev) => prev + 1);
@@ -207,28 +221,38 @@ const GetHelp:React.FC = () => {
                 break;
             default:
 
-                feedbackType = isInvalid("name", data.feedbackType);
-                feedbackContact = data.feedbackType === 'phone' ? false : isInvalid("surname", data.feedbackContact);
-                agree = isInvalid("isChecked", `${data.agree}`);
+                //feedbackType = isInvalid("name", data.feedbackType);
+                //feedbackContact = data.feedbackType === 'phone' ? false : isInvalid("surname", data.feedbackContact);
+                //agree = isInvalid("isChecked", `${data.agree}`);
 
-                newData.feedbackTypeInvalid = feedbackType;
-                newData.feedbackContactInvalid = feedbackContact;
-                newData.agreeInvalid = agree;
+                //newData.feedbackTypeInvalid = feedbackType;
+                //newData.feedbackContactInvalid = feedbackContact;
+                //newData.agreeInvalid = agree;
+                inPresent = isInvalid("isChecked", `${data.inPresent}`);
+                abuser = isInvalid("abuser", data.abuser);
+                abuseDescription = isInvalid("abuseDescription", data.abuseDescription);
 
-                if (!feedbackType && !feedbackContact && !agree) {
+                newData.inPresentInvalid = inPresent;
+                newData.abuserInvalid = abuser;
+                newData.abuseDescriptionInvalid = abuseDescription; 
+
+                if (!inPresent && !abuser && !abuseDescription ) {
                     const dataForSend = {
                         name:                 `${data.name} ${data.surname}`,
                         gender:               data.gender,
-                        //phone:                data.phone.replace(/\D/g, ''),
+                        inPresent:            data.inPresent,
                         phone:                data.phone,
                         diagnosis:            data.diagnosis,
-                        diagnosisDescription: data.diagnosisDescription,
+                        abuser:               data.abuser,
                         expertGender:         data.expertGender,
-                        feedbackType:         data.feedbackType,
-                        feedbackContact:      data.feedbackContact,
+                        //feedbackType:         data.feedbackType,
+                        //feedbackContact:      data.feedbackContact,
                         //feedbackTime:         data.feedbackTime,
                         //feedbackWeekDay:      data.feedbackWeekDay,
-                        isAdult:              data.isAdult,
+                        //isAdult:              data.isAdult,
+                        //phone:                data.phone.replace(/\D/g, ''),
+                        diagnosisDescription: data.diagnosisDescription,
+                        abuseDescription:     data.abuseDescription,
                     };
 
                     setDataForSending(dataForSend);
@@ -258,25 +282,6 @@ const GetHelp:React.FC = () => {
 
         return null;
     };
-
-    // const renderOverLoad = () => {
-    //     if (overLoad) {
-    //         return (
-    //             <div className = 'get-help__result'>
-    //                 <Modal isModal = { openModal }>
-    //                     <GeneralModal
-    //                         title = { I18n.t('overLoadTitle') }
-    //                         onButtonPress = { onCloseOverLoad }
-    //                         onClose = { onCloseOverLoad }>
-    //                         <OverLoad />
-    //                     </GeneralModal>
-    //                 </Modal>
-    //             </div>
-    //         );
-    //     }
-
-    //     return null;
-    // };
 
     if (resultSend !== null) {
         return (
@@ -363,44 +368,6 @@ const GetHelp:React.FC = () => {
                     </div>
 
                     <div className = { `form__section ${activeSlide === 2 ? "form__section--active" : ""}` }>
-                        {/*                        <div className = 'form__field-wrap'>
-                            <FieldText
-                                code = 'phone'
-                                invalid = { data.phoneInvalid }
-                                label = { I18n.t('getHelpTel') }
-                                placeholder = '(___) ___ __ __'
-                                type = 'tel'
-                                onChange = { handleChange }
-                            />
-                        </div>*/}
-
-                        <div>
-                            {/*                            <PhoneInput2
-                                inputProps = { {
-                                    name: 'phone',
-                                } }
-                                isValid = { (value, country) => {
-                                    if (!value) {
-                                        //return `Invalid value: ${value}, ${country.name}`;
-                                        return 'поле не может быть пустым';
-                                    } else if (value.match(/1234/)) {
-                                        return false;
-                                    }
-
-                                    return true;
-
-                                } }
-                                //localization = { ru }
-                                placeholder = 'Enter phone number'
-                                preferredCountries = { ['ua'] }
-                                value = { data.phone }
-                                onChange = { (phone) => {
-                                    const copyData = { ...data, phone };
-
-                                    setData(copyData);
-                                } }
-                            />*/}
-                        </div>
                         <div className = 'form__field-wrap'>
                             <FieldSelect
                                 code = 'diagnosis'
@@ -419,22 +386,21 @@ const GetHelp:React.FC = () => {
                                 placeholder = { I18n.t('areaGetHelpPholder') }
                                 onChange = { handleChange }
                             />
-
                         </div>
-                        {/* <div className="form__field-wrap">
+                        <div className = 'form__field-wrap'>
                             <FieldRadios
-                                label="Стать спеціаліста, з яким бажаєте поспілкуватися"
-                                code="expertGender"
-                                onChange={ handleChange }
-                                list={ [{ val: 'male', title: 'Чоловік' }, { val: 'female', title: 'Жінка' }, { val: 'no_matter', title: 'Байдуже' }] }
-                                indexDefault={2}
+                                code = 'inChildhood'
+                                label = { I18n.t('getHelpRadiochild') }
+                                list = { [{ val: 'yes', title: I18n.t('getHelpChildYes') }, { val: 'no', title: I18n.t('getHelpChildNo') }] }
+
+                                onChange = { handleChange }
                             />
 
-                        </div>*/}
+                        </div>
                     </div>
 
                     <div className = { `form__section ${activeSlide === 3 ? "form__section--active" : ""}` }>
-                        <div className = 'form__field-wrap'>
+                        {/* <div className = 'form__field-wrap'>
                             <FieldSelect
                                 code = 'feedbackType'
                                 defaultValue = 'phone'
@@ -450,9 +416,8 @@ const GetHelp:React.FC = () => {
                                 // subText = 'Если Вы гражданин Беларуси, пожалуйста, выберите, любой вариант, кроме номера телефона*'
                                 onChange = { handleChange }
                             />
-
-                        </div>
-                        { data.feedbackType !== "phone" &&
+                        </div> */}
+                        {/* { data.feedbackType !== "phone" &&
                         <div className = 'form__field-wrap'>
                             <FieldText
                                 code = 'feedbackContact'
@@ -462,47 +427,43 @@ const GetHelp:React.FC = () => {
                                 onChange = { handleChange }
                             />
                         </div>
-                        }
-                        {/*<div className = 'form__field-wrap'>
-                            <FieldListBtn
-                                code = 'feedbackWeekDay'
-                                custom = 'bold'
-                                label = "Дата на коли з вами зв'язатися"
-                                listBtn = { [
-                                    { val: "mon", title: "Пн", id: "b1" },
-                                    { val: "tue", title: "Вт", id: "b2" },
-                                    { val: "wed", title: "Ср", id: "b3" },
-                                    { val: "thu", title: "Чт", id: "b4" },
-                                    { val: "fri", title: "Пт", id: "b5" },
-                                    { val: "sat", title: "Сб", id: "b6" },
-                                    { val: "sun", title: "Нд", id: "b7" }
-                                ] }
-                                onChange = { handleChange }
-                            />
-                        </div>
-
-                        <div className = 'form__field-wrap'>
-                            <FieldListBtn
-                                code = 'feedbackTime'
-                                custom = 'small'
-                                label = "Час коли з вами зв'язатися"
-                                listBtn = { [
-                                    { val: "8:00", title: "08:00 - 13:00", id: "t1" },
-                                    { val: "13:00", title: "13:00 - 18:00", id: "t2" },
-                                    { val: "18:00", title: "18:00 - 21:00", id: "t3" }
-                                ] }
-                                onChange = { handleChange }
-                            />
-
-                        </div>*/}
-
-                        <div className = 'form__field-wrap'>
+                        } */}
+                        {/* <div className = 'form__field-wrap'>
                             <FieldCheckbox
                                 code = 'agree'
                                 invalid = { data.agreeInvalid }
                                 link = '/privacy-policy'
                                 linkText = { I18n.t('getHelpAgreeLink') }
                                 text = { I18n.t('getHelpAgreeText') }
+                                onChange = { handleChange }
+                            />
+                        </div> */}
+                        <div className = 'form__field-wrap'>
+                            <FieldRadios
+                                code = 'inPresent'
+                                label = { I18n.t('getHelpinPresent') }
+                                list = { [{ val: 'past', title: I18n.t('getHelpPast') }, { val: 'present', title: I18n.t('getHelpPresent') }] }
+
+                                onChange = { handleChange }
+                            />
+
+                        </div>
+                        <div className = 'form__field-wrap'>
+                            <FieldSelect
+                                code = 'abuser'
+                                invalid = { data.abuserInvalid }
+                                label = { I18n.t('getHelpAbuser') }
+                                listOption = { abuser }
+                                onChange = { handleChange }
+                            />
+
+                        </div>
+                        <div className = 'form__field-wrap'>
+                            <FieldTextarea
+                                code = 'abuseDescription'
+                                invalid = { data.abuseDescriptionInvalid }
+                                label = { I18n.t('areaGetHelpLabel') }
+                                placeholder = { I18n.t('areaGetHelpPholder') }
                                 onChange = { handleChange }
                             />
                         </div>

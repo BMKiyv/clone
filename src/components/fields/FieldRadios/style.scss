@@ -16,7 +16,7 @@
   &__radio{
     display: flex;
     margin-right: 20px;
-    border: 1px solid var(--pink);
+    //border: 1px solid var(--pink);
     border-radius: 13px;
     padding: 5px;
     background: white;
@@ -25,7 +25,7 @@
       display: none;
 
       &:checked + span {
-        border-color: var(--bg-btn-main);
+        border-color: var(--checkbox);
 
         &:before {
           opacity: 1;
@@ -33,10 +33,16 @@
       }
     }
 
+    & input:checked {
+      background: var(--color-pink);
+      color: var(--color-white);
+      //border: 1px solid var(--color-white);
+    }
+
     &-check {
       width: 16px;
       height: 16px;
-      border: 1px solid var(--pink);
+      border: 1px solid var(--checkbox);
       border-radius: 50px;
       margin-right: 10px;
       display: flex;
@@ -52,6 +58,9 @@
         background: var(--color-pink);
         opacity: 0;
       }
+    }
+    &-text{
+     color: var(--checkbox);
     }
   }
 }

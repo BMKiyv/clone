@@ -3,6 +3,7 @@ import { diagnosisI, whatYouGetI, firstPsyhologI, howWeWorkI, firstHomeI,
     reviewFormI, partnersI} from '@/interfaces';
 import {specialistsI, faqI} from '@/interfaces/home';
 import diagnos from './diagnosis.json';
+import abusers from './abuser.json';
 import faQ from './faq.json';
 import firstHom from './firstHome.json';
 import firstPsyhologist from './firstPsyholog.json';
@@ -20,6 +21,7 @@ import partnerRu from './ru/partners.json';
 import reviewsFormRu from './ru/reviewForm.json';
 import specialistRu from './ru/specialists.json';
 import whathYouGetRu from './ru/whatYouGet.json';
+import abuserRu from './ru/abuser.json';
 
 
 let diagnosis:diagnosisI[];
@@ -31,6 +33,7 @@ let partners:partnersI[];
 let reviewForm:reviewFormI;
 let specialists: specialistsI[];
 let whatYouGet:whatYouGetI;
+let abuser:diagnosisI[];
 
 switch (LANG) {
     case 'ru':
@@ -43,6 +46,7 @@ switch (LANG) {
         reviewForm = reviewsFormRu;
         specialists = specialistRu;
         whatYouGet = whathYouGetRu;
+        abuser = abuserRu;
 
         break;
     default:
@@ -55,7 +59,8 @@ switch (LANG) {
         reviewForm = reviewsForm;
         specialists = specialist;
         whatYouGet = whathYouGet;
+        abuser = abusers;
         break;
 }
 
-export { diagnosis, faq, firstHome, firstPsyholog, howWeWork, partners, reviewForm, specialists, whatYouGet };
+export { diagnosis, faq, firstHome, firstPsyholog, howWeWork, partners, reviewForm, specialists, whatYouGet, abuser };

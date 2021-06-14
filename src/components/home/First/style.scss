@@ -23,7 +23,7 @@
     color: var(--color-black);
     text-align: center;
     //max-width: calc(544px + var(--m-horizont) * 2);
-    max-width: calc(650px + var(--m-horizont) * 2);
+    max-width: calc(var(--max-w) + var(--m-horizont) * 2);
     z-index: 1;
     @media screen and (min-width: 768px) {
      // margin-bottom: calc(var(--height-header);
@@ -92,6 +92,9 @@
     line-height: 24px;
     margin-right: auto;
     margin-left: auto;
+    @media (min-width:1024px){
+      width: 70%;
+    }
 
     @media screen and (max-width: 340px) {
       font-size: 14px;

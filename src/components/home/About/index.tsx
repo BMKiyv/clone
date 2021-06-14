@@ -39,8 +39,9 @@ const About:React.FC = () => {
                     </p>
                     <div className = { `about_btn-more ${isOpen ? "about_btn-more--full" : ""}` }>
                         <Btn
+                            full
                             theme = 'main'
-                            title = { 'мені здається' }
+                            title = { 'Отримати психологічну допомогу' }
                             url = { 'https://itseems.com.ua' }
                             onPress = { toggleOpen }
                         />

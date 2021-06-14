@@ -8,7 +8,7 @@ import { yourHelpI } from '@/interfaces';
 
 const YourHelp:React.FC = () => {
 
-    const [ full, setFull ] = useState(false);
+    const [full, setFull] = useState(false);
 
     const renderList = (data:yourHelpI) => {
         const styled = {
@@ -26,7 +26,7 @@ const YourHelp:React.FC = () => {
         };
 
         return (
-            <div className = 'yourHelp__card-wrap' key = { data.title }>
+            <div className = { full?'yourHelp__card-wrap': 'yourHelp__card-wrap yourHelp__card-wrap-full' } key = { data.title }>
                 <div style = { styled } />
                 <div className = 'yourHelp__card-text'>
                     <h3 className = 'yourHelp__card-title'>{ data.title }</h3>

@@ -7,7 +7,7 @@ const FieldPhone:React.FC<fieldPhoneI> = ({ label, value, onChange, placeholder,
 
     return (
         <div className = 'field-phone'>
-            { label && <label className = 'form__label field-phone__label'>{label}</label> }
+            { label && <label className = 'form__label field-phone__label'>{label}<span>*</span></label> }
             <PhoneInput
                 international
                 className = { `field-phone__field ${invalid ? "field-phone__field--invalid" : ""}` }

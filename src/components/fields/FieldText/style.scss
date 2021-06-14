@@ -1,5 +1,7 @@
 .field-text{
-  &__label{}
+  &__label span{
+    color:var(--red);
+  }
   &__field {
     background-color: var(--color-white);
     padding: 15px 16px;

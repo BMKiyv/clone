@@ -1,20 +1,26 @@
 .field-select {
   &__label {
+    & span{
+      color: var(--red);
+    }
   }
 
   &__wrap {
     position: relative;
 
     &:after {
-      content: '';
-      position: absolute;
-      right: 15px;
-      top: 27px;
-      transform: translateY(-50%);
-      border-left: 4px solid transparent;
-      border-right: 4px solid transparent;
-
-      border-top: 6px solid var(--bg-btn-main);
+      content: "";
+      position: relative;
+      top: -37px;
+      left: 90%;
+      width: 0;
+      height: 0;
+      background-image: url('/img/triangle_down.svg');
+      background-repeat: no-repeat;
+      background-position: 50%;
+      border-color: transparent;
+      border-style: solid;
+      border-width: 12px 7.5px 0;
 
     }
     &--multiple{
@@ -29,7 +35,7 @@
     padding: 15px 16px;
     border-radius: 5px;
     border: 1px solid var(--border-input);
-    color: var(--dark-blue);
+    color: var(--checkbox);
     width: 100%;
     padding-right: 40px;
 

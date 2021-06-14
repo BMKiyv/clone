@@ -8,7 +8,7 @@ const FieldText:React.FC<fieldTextI> = ({
     return (
         <div className = 'field-text'>
             {
-                label && <label className = 'form__label field-text__label'>{label}</label>
+                label && <label className = 'form__label field-text__label'>{label}<span>*</span></label>
             }
             <input
                 className = { `field-text__field ${invalid ? "field-text__field--invalid" : ""}` } name = { code }

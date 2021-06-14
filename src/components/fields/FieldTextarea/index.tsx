@@ -7,7 +7,7 @@ const FieldTextarea:React.FC<fieldTextareaI> = ({
 }) => {
     return (
         <div className = 'field-textarea'>
-            { label && <label className = 'form__label field-textarea__label'>{label}</label> }
+            { label && <label className = 'form__label field-textarea__label'>{label}<span>*</span></label> }
             <textarea
                 className = { `field-textarea__field
                        ${bgField ? "field-textarea__field-light-blue" : ""}

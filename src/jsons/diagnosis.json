@@ -1,27 +1,7 @@
 [
-  { "val": "depression", "title": "депресія" },
-  {
-    "val": "eating_disorders",
-    "title": "розлади харчової поведінки(булімія, анорексія, переїдання)"
-  },
-  { "val": "experience_of_loss", "title": "важке переживання втрати" },
-  { "val": "health_concerns", "title": "тривога за здоров'я" },
-  {
-    "val": "obsessive_compulsive_disorder",
-    "title": "обсесивно-компульсивний розлад(нав'язливі думки та дії)"
-  },
-  { "val": "panic", "title": "панічний розлад" },
-  { "val": "phobias", "title": "фобії" },
-  { "val": "ptsr", "title": "ПТСР(травма)" },
-  {
-    "val": "unknown_fear",
-    "title": "генералізований тривожний розлад(страх невідомості і невизначеності)"
-  },
-  { "val": "family_problem", "title": "проблеми в сімейних стосунках" },
-  { "val": "parents_children_problem", "title": "проблеми у стосунках батьків і дітей" },
-  {
-    "val": "addictions",
-    "title": "залежність від алко/нарко/відносин"
-  },
+  { "val": "psychological", "title": "Психологічне" },
+  { "val": "economical", "title": "економічне" },
+  { "val": "sexual", "title": "сексуальне" },
+  { "val": "physical", "title": "фізичне" },
   { "val": "other", "title": "інше" }
 ]

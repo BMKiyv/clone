@@ -1,11 +1,15 @@
 .field-textarea{
-  &__label{}
+  &__label{
+    & span{
+      color:var(--red);
+    }
+  }
   &__field {
     background-color: var(--color-white);
     padding: 15px 16px;
     border-radius: 5px;
     border: 1px solid var(--border-input);
-    color: var(--dark-blue);
+    color: var(--checkbox);
     width: 100%;
     height: 100px;
     resize: none;

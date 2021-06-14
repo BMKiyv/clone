@@ -25,7 +25,7 @@ const FieldSelect:React.FC<fieldSelectI> = ({
 
     return (
         <div className = 'field-select'>
-            { label && <label className = 'form__label field-select__label'>{ label }</label> }
+            { label && <label className = 'form__label field-select__label'>{ label }<span>*</span></label> }
             {subText && <div className = 'form__attention'>
                 <span>{subText}</span>
             </div>}

@@ -35,8 +35,10 @@ export interface sendRequisitionI {
     phone: string,
     diagnosis: string,
     diagnosisDescription: string,
-    expertGender: string,
-    feedbackType: string,
-    feedbackContact: string,
+    expertGender?: string,
+    feedbackType?: string,
+    feedbackContact?: string,
     isAdult?: boolean,
+    abuser: string,
+    inPresent: string,
 }
