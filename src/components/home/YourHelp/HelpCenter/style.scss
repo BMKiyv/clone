@@ -1,0 +1,159 @@
+@use "src/assets/scss/variables" as c;
+
+.help-center {
+  background-color: var(--color-white);
+  box-shadow: var(--shadow);
+  border-radius: 6px;
+  margin-bottom: 16px;
+  text-align: left;
+  overflow: hidden;
+  display: inline-block;
+
+  &:hover{
+    opacity: .9;
+  }
+
+  @media screen and (min-width: c.$start-media-table) {
+    display: flex;
+  }
+
+  &__img{
+
+    max-height: 100%;
+
+    &-wrap{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 144px;
+      width: 100%;
+      background-color: var(--middle-gray);
+      padding: 10px;
+
+      @media screen and (min-width: c.$start-media-table) {
+        width: 268px;
+        height: auto;
+      }
+    }
+    &-link{
+      &:hover{
+        opacity: 0.9;
+      }
+    }
+    &-no{
+      color: rgba(0, 0, 0, 0.2);
+      font-size: 52px;
+    }
+    &-bottom{
+      align-items: flex-end;
+      padding-bottom: 0px;
+    }
+  }
+
+  &__body{
+    padding: 20px var(--m-inside) 26px;
+    font-size: 20px;
+    @media screen and (min-width: c.$start-media-table) {
+      flex: 1;
+      padding: 35px 48px;
+    }
+    @media screen and (max-width: c.$end-media-mini-mob) {
+      padding: 20px 20px 26px;
+    }
+  }
+
+  &__title{
+    margin-bottom: 8px;
+    font-size: 24px;
+    @media screen and (min-width: c.$start-media-table) {
+      font-size: 27px;
+    }
+  }
+
+  &__description{
+    margin-bottom: 16px;
+    @media screen and (min-width: c.$start-media-table) {
+    font-size: 20px;
+    }
+  }
+  &__show-info{
+    max-width: 250px;
+    margin-top: 20px;
+
+    .icon{
+      padding-left: 7px;
+      font-size: 9px;
+      top: 2px;
+      position: relative;
+    }
+
+    .btn_text{
+      font-weight: normal;
+      font-size: 18px;
+    }
+  }
+
+  &__show-link{
+    i{
+      transform: rotate(-90deg) translate(-2px, 2px);
+    }
+  }
+
+}
+
+.help-data{
+  &__contacts {
+    margin-bottom: 20px;
+    @media screen and (min-width: c.$start-media-table) {
+      margin-bottom: 25px;
+    }
+    //flex-direction: column;
+
+  }
+
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    @media screen and (min-width: c.$start-media-table) {
+      margin-bottom: 2px;
+    }
+  }
+
+  &__icon{
+    position: relative;
+    top: 1px
+  }
+
+  &__contact {
+    color: var(--color-links);
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+    margin-right: 20px;
+
+    &-icon {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: #7EA393;
+      margin-right: 8px;
+      font-size: 13px;
+      color: #fff;
+    }
+
+    &-data {
+      font-size: 17px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+

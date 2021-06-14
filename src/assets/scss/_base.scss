@@ -67,7 +67,11 @@ select, label{
   cursor: pointer;
 }
 
-p,
+p{
+  margin: 0;
+  font-size: inherit;
+}
+
 h1,
 h2,
 h3,
@@ -76,6 +80,7 @@ h5,
 h6 {
   margin: 0;
   font-size: inherit;
+  font-family: var(--font-headers);
 }
 
 figure {
