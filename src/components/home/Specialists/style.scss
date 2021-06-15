@@ -1,4 +1,9 @@
 .specialists {
+
+   .title{
+     text-align: center;
+   }
+
   &-content-wrap{
     @media screen and (max-width: 1024px) {
       padding-right: 15px;
@@ -306,7 +311,7 @@
       background-image: url("/img/specialists/nazarenko_nataliya.jpg");
       background-size: 110%;
       background-position: 100% 0%;
-    } 
+    }
     &--yulia_kuzmenko {
       background-image: url("/img/specialists/yulia_kuzmenko.jpg");
       background-size: 150%;

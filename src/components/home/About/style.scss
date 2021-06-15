@@ -3,12 +3,6 @@
     padding: 70px 15px 30px;
   }
 
-  &-title {
-    text-align: left;
-    @media (min-width: 1024px){
-      margin: 50px 0 17px 100px;
-    }
-  }
 
   &-wrap {
     max-width: calc(var(--max-w) + var(--m-horizont)*2);
@@ -29,6 +23,7 @@
     @media screen and (min-width: 768px) {
       flex: 1;
       padding-right: var(--m-horizont);
+      margin-left: 14%;
       img{
         width: 100%;
       }
@@ -97,7 +92,7 @@
     transition: .4s;
     max-height: 355px;
     @media screen and (min-width: 768px) {
-      padding-right: 50px;
+      //padding-right: 50px;
       max-height: 470px;
     }
 

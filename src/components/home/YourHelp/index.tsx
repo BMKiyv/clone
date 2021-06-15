@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useMemo} from 'react';
 import { useState } from 'react';
 import './style.scss';
 
 import Btn from "@/components/Btn";
+import {HelpCenter} from "./HelpCenter";
 import yourHelp from '../../../jsons/yourHelp.json';
 import { yourHelpI } from '@/interfaces';
 
@@ -10,7 +11,7 @@ const YourHelp:React.FC = () => {
 
     const [full, setFull] = useState(false);
 
-    const renderList = (data:yourHelpI) => {
+/*    const renderList = (data:yourHelpI) => {
         const styled = {
             'backgroundColor':    `${data.bg}`,
             'minHeight':          '140px',
@@ -41,13 +42,29 @@ const YourHelp:React.FC = () => {
                 </div>
             </div>
         );
-    };
+    };*/
+
+    const renderList = useMemo(() => {
+        return yourHelp.map((item, index) => {
+            return (<HelpCenter
+                bg = { item.bg }
+                bgPosition = { item.bgPosition }
+                contacts = { item.contacts }
+                description = { item.description }
+                img = { item.img }
+                ind = { index }
+                key = { item.bg }
+                link = { item.link }
+                title = { item.title }
+            />);
+        });
+    }, []);
 
     return (
-        <section>
-            <div className = 'yourHelp__main'>
+        <section className = 'your-help'>
+            <div className = 'content-wrap'>
                 <h2 className = 'title'>Твоя допомога</h2>
-                {yourHelp.map(renderList)}
+                {renderList}
             </div>
         </section>
     );

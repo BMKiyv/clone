@@ -1,14 +1,13 @@
 :root {
   // FONTS ------------------------
-  --font-main: 'Futura PT';
+  --font-main: 'Futura PT Book', sans-serif;
+  --font-headers: 'Futura PT', sans-serif;
 
   // COLORS ------------------------
   --color-white: #FFFFFF;
   --color-white-rgb: 255, 255, 255;
   --color-black: #333333;
   --color-pink: linear-gradient(266.25deg, #D4487D 5.97%, #DB6A48 94.97%, #E57857 94.97%);
-  ;
-  ;
 
   --bg-rate: #FDD302;
   --dark-blue: #131E52;
@@ -40,9 +39,11 @@
   // MARGINS ------------------------
   --m-horizont: 1px;
   --m-vertical: 50px;
+  --m-outside: 12px;
+  --m-inside: 28px;
 
   // SIZE -----------------------
-  --max-w: 1024px;
+  --max-w: 1080px;
   --media-desctop: 1024px;
   --media-mob: 1023px;
   //FONT-SIZE ----------------------
@@ -77,3 +78,11 @@
     --m-horizont: 15px;
   }
 }
+
+//SCSS VARIABLE
+$start-media-desktop: 1024px;
+$start-media-table: 768px;
+$end-media-table: 1023px;
+$end-media-mobile: 767px;
+$end-media-mini-mob: 330px;
+
