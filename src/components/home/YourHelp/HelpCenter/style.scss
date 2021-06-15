@@ -78,8 +78,11 @@
     }
   }
   &__show-info{
-    max-width: 250px;
+    max-width: 300px;
     margin-top: 20px;
+    @media (min-width:1024px){
+      max-width: 250px;
+    }
 
     .icon{
       padding-left: 7px;

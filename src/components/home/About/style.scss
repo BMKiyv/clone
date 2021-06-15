@@ -49,6 +49,18 @@
     text-align: left;
   }
 
+  &__height{
+    @media (max-width:768px){
+      max-height: 150px;
+      overflow: hidden;
+    }
+    max-height: auto;
+    overflow: visible;
+    &-more{
+      max-height: 550px;
+    }
+  }
+
   &_btn-more {
     margin-top: 12px;
     position: relative;
@@ -56,6 +68,8 @@
     @media (max-width:767px) {
       align-self: center;
     }
+
+
 
     // &:before {
     //   content: "";
@@ -104,3 +118,18 @@
 .content-wrap.about__content.pad{
   padding-top: 0px;
 }
+.about_btn-more > .btn-main {
+  margin-top: 20px;
+}
+.about_btn-more > .btn-main > .btn_text{
+  @media (max-width:768px){
+    font-size: 15px;
+  }
+
+}
+.about__height + button.btn-more{
+  @media (min-width:1024px){
+    display: none;
+  }
+}
+

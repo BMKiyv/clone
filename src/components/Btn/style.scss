@@ -70,13 +70,16 @@
     }
   }
   &-blue {
-    background:  #226AB2;
+    background: var(--viber);
     color: var(--color-white);
   }
   &-grey {
     background: rgba(96, 76, 222, 0.12);
     color: #604CDE;
-    padding: 8px 25px;
+    padding: 13px 25px;
+    @media (min-width:1024px){
+      padding: 8px 25px;
+    }
 
   }
 
