@@ -12,9 +12,10 @@
 
   &__question {
     color: var(--color-black);
-    font-weight: bold;
+    font-weight: 900;
     line-height: 1.4;
     padding-right: 10px;
+    font-family: var(--font-headers);
   }
 
   &__answer {

@@ -3,6 +3,9 @@
     margin-right: auto;
     max-width: calc(var(--max-w) - var(--m-inside) * 2);
     margin-bottom: 50px;
+    border-radius: 8px;
+    overflow: hidden;
+
     @media (min-width:768px){
         background-color: #EBE6E4;
         margin-top: 50px;
@@ -49,6 +52,6 @@
         @media (min-width:1024px){
             margin-top: 30px;
         }
-        
+
     }
 }
