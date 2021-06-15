@@ -44,28 +44,25 @@
     height: 14px;
     position: relative;
 
-    &:after, &:before {
-      content: "";
-      width: inherit;
-      height: 2px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      background-color: var(--dark-blue);
-      transition: var(--anim-slow);
-    }
-
     &:after {
-      transform: translate(-50%, -50%);
+      content: "";
+      position: relative;
+      top: 0px;
+      left: -50%;
+      width: 0;
+      height: 0;
+      background-image: url('/img/triangle-down.svg');
+      background-repeat: no-repeat;
+      background-position: 50%;
+      border-color: transparent;
+      border-style: solid;
+      border-width: 12px 7.5px 0;
     }
 
-    &:before {
-      transform: translate(-50%, -50%) rotate(90deg);
-    }
 
     &--active {
-      &:after, &:before {
-        background-color: var(--bg-btn-main);
+      &:after {
+        background-image: url('/img/triangle_up.svg');
       }
     }
 
