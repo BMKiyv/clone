@@ -13,6 +13,7 @@ export const HelpCenter:React.FC<HelpCenterI>  = ({
     bg,
     bgPosition,
     link,
+    src
 }) => {
 
     const [isShowData, setIsShowData] = useState(false);
@@ -85,8 +86,8 @@ export const HelpCenter:React.FC<HelpCenterI>  = ({
                                 <Btn
                                     full
                                     //small
-                                    //iconName = 'arrow-bottom'
-                                    theme = 'blue'
+                                    img = { src }
+                                    theme = 'grey'
                                     title = 'Подивитися контакти'
                                     onPress = { toggleInfo }
                                 />
@@ -94,8 +95,8 @@ export const HelpCenter:React.FC<HelpCenterI>  = ({
                                 <Btn
                                     full
                                     //small
-                                    //iconName = 'arrow-bottom'
-                                    theme = 'blue'
+                                    img = { src }
+                                    theme = 'grey'
                                     title = 'Перейти до сайту'
                                 />
                             }

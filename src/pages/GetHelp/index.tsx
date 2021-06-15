@@ -35,7 +35,7 @@ import { sendValidPhone, sendRequisition } from "@/API";
 
 const GetHelp:React.FC = () => {
     useRemoveKeydown();
-    const [activeSlide, setActiveSlide] = useState(3);
+    const [activeSlide, setActiveSlide] = useState(1);
     const [loader, setLoader] = useState(false);
     const [openModal, setOpenModal] = useState(true);
     const [resultSend, setResultSend] = useState<number | null>(null);

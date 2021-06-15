@@ -95,13 +95,14 @@ export interface yourHelpI {
     bg: string,
     img: string,
     url?: string,
-    onPress?: ()=>{},
+    onPress?: ()=>void,
     bgPosition?: string,
     contacts?: HelpCenterContactsI[],
     link?: string,
 }
 
 export interface HelpCenterI {
+    src: string,
     ind: number,
     title: string,
     description: string,
@@ -109,7 +110,7 @@ export interface HelpCenterI {
     bg: string,
     img: string,
     url?: string,
-    onPress?: ()=>{},
+    onPress?: ()=>void,
     bgPosition?: string,
     link?: string,
 }

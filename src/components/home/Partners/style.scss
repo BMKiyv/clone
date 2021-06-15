@@ -11,6 +11,8 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    max-width: calc(var(--max-w) - var(--m-inside) * 2 + 20px);
+    margin: 0 auto;
   }
 
   &__item-wrap {
@@ -41,6 +43,7 @@
     overflow: hidden;
     padding: 24px;
     @media screen and (min-width: 768px) {
+      margin: 20px 10px 0;
       background: var(--bg-light-blue);
       overflow: hidden;
       padding: 50px 58px;

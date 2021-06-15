@@ -119,13 +119,13 @@ const Footer:React.FC = () => {
                                     </div>
                                 </div>
                                 <div className = 'footer_links'>
-                                    <Link className = 'footer_link' to = { `${URL_LANG}/privacy-policy` }>
+                                    <a className = 'footer_link' href = 'https://tellme.com.ua/use-of-site' rel = 'noreferrer' target = '_blank'>
+                                        {I18n.t('footerRules')}
+                                    </a>
+                                    <a className = 'footer_link' href = 'https://tellme.com.ua/privacy-policy' rel = 'noreferrer' target = '_blank'>
                                         {I18n.t('footerPrivacy1')}
                                         {I18n.t('footerPrivacy2')}
-                                    </Link>
-                                    <Link className = 'footer_link' to = { `${URL_LANG}/use-of-site` }>
-                                        {I18n.t('footerRules')}
-                                    </Link>
+                                    </a>
                                 </div>
 
                             </div>

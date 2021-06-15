@@ -56,6 +56,7 @@
     @media screen and (min-width: c.$start-media-table) {
       flex: 1;
       padding: 35px 48px;
+      min-height: 268px;
     }
     @media screen and (max-width: c.$end-media-mini-mob) {
       padding: 20px 20px 26px;

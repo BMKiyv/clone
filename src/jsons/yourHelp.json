@@ -47,16 +47,8 @@
         "img":        "/img/help24-7.svg",
         "bg":         "#E59889",
         "bgPosition": "center",
-        "link":       ""
-    },
-    {
-        "title":       "Товариство Червоного Хреста України",
-        "description": "Це найбільша гуманітарна організація в світі. Керуючись принципами нейтральності і єдності, Рух надає допомогу всім, хто її найбільше потребує. Будь-яка людина, яка потрапила у скрутну ситуацію, – може звернутися до представників Червоного Хреста.",
-        "contacts":    [],
-        "img":         "/img/red_christ.svg",
-        "bg":          "#EAE3E3",
-        "bgPosition":  "center",
-        "link":        "https://redcross.org.ua"
+        "link":       "",
+        "src": "/img/icon_up.svg"
     },
     {
         "title":       "Розірви коло",
@@ -65,7 +57,18 @@
         "img":         "/img/rozirvy_kolo.svg",
         "bg":          "#991F66",
         "bgPosition":  "center",
-        "link":        "https://rozirvykolo.org"
+        "link":        "https://rozirvykolo.org",
+        "src": "/img/icon_up2.svg"
+    },
+    {
+        "title":       "Товариство Червоного Хреста України",
+        "description": "Це найбільша гуманітарна організація в світі. Керуючись принципами нейтральності і єдності, Рух надає допомогу всім, хто її найбільше потребує. Будь-яка людина, яка потрапила у скрутну ситуацію, – може звернутися до представників Червоного Хреста.",
+        "contacts":    [],
+        "img":         "/img/red_christ.svg",
+        "bg":          "#F9F9F9",
+        "bgPosition":  "center",
+        "link":        "https://redcross.org.ua",
+        "src": "/img/icon_up2.svg"
     }
 
 ]

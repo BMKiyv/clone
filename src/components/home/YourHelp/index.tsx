@@ -47,6 +47,7 @@ const YourHelp:React.FC = () => {
     const renderList = useMemo(() => {
         return yourHelp.map((item, index) => {
             return (<HelpCenter
+                src = { item.src }
                 bg = { item.bg }
                 bgPosition = { item.bgPosition }
                 contacts = { item.contacts }

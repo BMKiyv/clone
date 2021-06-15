@@ -1,7 +1,7 @@
 .abuse{
     margin-left: auto;
     margin-right: auto;
-    max-width: calc(var(--max-w) + var(--m-horizont) * 2);
+    max-width: calc(var(--max-w) - var(--m-inside) * 2);
     margin-bottom: 50px;
     @media (min-width:768px){
         background-color: #EBE6E4;

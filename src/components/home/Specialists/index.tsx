@@ -35,8 +35,9 @@ const Specialist:React.FC  = () => {
             //console.log("-----", countArrays, countElements, width);
             if (countElements < 3 && width > 1023) {
                 countElements += 1;
-            } else if (countElements === 1 && width < 1024) {
-                countElements += 1;
+            } else if (countElements <= 1 && width < 1024) {
+                groupArrSpec[0] = [];
+                countElements = 1;
                 countArrays += 1;
                 groupArrSpec[countArrays] = [];
             } else {

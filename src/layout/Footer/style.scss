@@ -6,9 +6,12 @@
     flex-direction: column;
     width: 100%;
     color: var(--color-black);
-    padding: 70px var(--m-horizont) 60px var(--m-horizont);
-    max-width: calc(var(--max-w) + var(--m-horizont)*2);
+    padding: 70px 14px 60px 15px;
     margin: 0px auto;
+    @media (min-width:1024px){
+      padding: 70px var(--m-horizont) 60px var(--m-horizont);
+      max-width: calc(var(--max-w) + var(--m-inside)*2);
+    }
   }
 
   .title {
