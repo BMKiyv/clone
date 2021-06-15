@@ -51,11 +51,13 @@
   &_img {
     height: inherit;
     width: 100vw;
-
-    background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     position: relative;
+    @media (min-width:768px){
+      background-position: center;
+      background-size: cover;
+    }
 
     &--home {
       @media screen and (max-width: 767px) {
@@ -88,6 +90,7 @@
     @media (max-width: 767px){
       text-align: left;
       font-size: 42px;
+      line-height: 44px;
     }
   }
 
