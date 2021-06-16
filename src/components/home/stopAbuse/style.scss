@@ -49,9 +49,31 @@
         }
     }
     &-btn {
+        margin-top: 15px;
         @media (min-width:1024px){
             margin-top: 30px;
         }
 
     }
+    &-hide{
+        display: inline-block;
+        @media (max-width:767px){
+            display: none;
+        }
+    }
+
+    &__height{
+        @media (min-width:1024px){
+          max-height: 260px;
+          overflow: hidden;
+        }
+        max-height: auto;
+        overflow: visible;
+        &-more{
+          max-height: 550px;
+        }
+      }
+}
+.abuse__height + .btn-more{
+    text-align: left;
 }
